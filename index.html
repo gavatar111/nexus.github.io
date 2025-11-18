@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title></title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NEXUS</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#ozellikler" onclick="toggleMenu()">Özellikler</a>
+            <a href="#colors" onclick="toggleMenu()">Stilini Seç</a>
+            <a href="#teknik" onclick="toggleMenu()">Teknik</a>
+            <a href="#" class="buy-btn">Satın Al</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Nexus</h1>
+        <p>Telefon yok. Kablo yok. Sınır yok.<br>Dünyanın ilk bağımsız mekansal yapay zeka gözlüğü.</p>
+    </header>
+
+    <section id="ozellikler" class="showcase">
+        <div class="feature-row reveal">
+            <div class="feature-text">
+                <h3>Sonsuz Ekran</h3>
+                <h2>Her Yerde Kendi Özel Alanınız</h2>
+                <p>Entegre yüksek çözünürlüklü Micro-OLED ekranlarla dijital dünyanız her an sizinle.</p>
+            </div>
+            <div class="feature-img"><img src="src/ekran.png" alt="Ekran"></div>
+        </div>
+
+        <div class="feature-row reveal">
+            <div class="feature-text">
+                <h3>Sezgisel Kontrol</h3>
+                <h2>Dokunmadan Etkileşim</h2>
+                <p>Gözlerinizle bakarak seçiminizi yapın ve parmaklarınızla yapacağınız nazik mikro hareketlerle onaylayın.</p>
+            </div>
+            <div class="feature-img"><img src="src/kontrol.png" alt="Kontrol"></div>
+        </div>
+        
+         <div class="feature-row reveal">
+            <div class="feature-text">
+                <h3>Ses Deneyimi</h3>
+                <h2>Sadece Sizin Duyduğunuz Ses</h2>
+                <p>Yönlendirilmiş ses teknolojisi ile müziği sadece siz duyun.</p>
+            </div>
+            <div class="feature-img"><img src="src/ses.png" alt="Ses"></div>
+        </div>
+
+         <div class="feature-row reveal">
+            <div class="feature-text">
+                <h3>Yapay Zeka</h3>
+                <h2>Dünyayı Okuyan Göz</h2>
+                <p>Nexus Core işlemcisi dünyayı sizin için analiz eder.</p>
+            </div>
+            <div class="feature-img"><img src="src/ai.png" alt="AI"></div>
+        </div>
+        
+         <div class="feature-row reveal">
+            <div class="feature-text">
+                <h3>Tasarım</h3>
+                <h2>Teknoloji, Tarzla Buluştu</h2>
+                <p>Sadece 88 gramlık ultra hafif karbon fiber gövde.</p>
+            </div>
+            <div class="feature-img"><img src="src/tasarim.png" alt="Tasarım"></div>
+        </div>
+    </section>
+
+    <section id="colors" class="colors-section reveal">
+        <h2>Tarzını Seç</h2>
+        
+        <div class="product-viewer">
+            <div class="main-image-container">
+                <img src="src/siyah.png" id="mainProductImage" class="main-image" alt="VISTA Gözlük">
+            </div>
+
+            <div class="color-controls">
+                <div class="selected-color-name" id="colorNameDisplay">Mat Siyah</div>
+                
+                <div class="color-balls">
+                    <div class="ball active" style="background:#111;" 
+                         onclick="changeColor('src/siyah.png', 'Mat Siyah', this)"></div>
+                    
+                    <div class="ball" style="background:#0b1d38;" 
+                         onclick="changeColor('src/lacivert.png', 'Derin Lacivert', this)"></div>
+                    
+                    <div class="ball" style="background:#555;" 
+                         onclick="changeColor('src/gri.png', 'Uzay Grisi', this)"></div>
+                    
+                    <div class="ball" style="background:#eee;" 
+                         onclick="changeColor('src/beyaz.png', 'Saf Beyaz', this)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teknik" class="specs reveal">
+        <h2>Teknik Detaylar</h2>
+        <div class="spec-grid">
+            <div class="spec-item">
+                <h4>İşlemci</h4>
+                <span>Nexus Neural Core (5nm)</span>
+            </div>
+            <div class="spec-item">
+                <h4>Ekran</h4>
+                <span>Çift Micro-OLED 4K</span>
+            </div>
+            <div class="spec-item">
+                <h4>Ağırlık</h4>
+                <span>88 Gram</span>
+            </div>
+            <div class="spec-item">
+                <h4>Batarya</h4>
+                <span>8 Saat Aktif Kullanım</span>
+            </div>
+            <div class="spec-item">
+                <h4>Bağlantı</h4>
+                <span>Wi-Fi 7 & Bluetooth 5.3</span>
+            </div>
+            <div class="spec-item">
+                <h4>Sensörler</h4>
+                <span>LiDAR, RGB Kameralar, Göz Takibi</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Nexus Technologies.</p>
+    </footer>
+</body>
+</html>
